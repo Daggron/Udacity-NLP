@@ -36,8 +36,4 @@ yarn test
 for testing
 ```
 
-
-
-This project is live and can be viewed [here]()
-
 Happy Programming :zap:
