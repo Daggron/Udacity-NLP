@@ -1,7 +1,7 @@
 {
-  "name": "news-article-nlp",
+  "name": "newsNLP",
   "version": "1.0.0",
-  "description": "Evaluate a news article with Natural Language Processing project from Udacity's Front-End Nanodegree program",
+  "description": "",
   "main": "src/server/app.js",
   "scripts": {
     "start": "npm run build && node src/server/app.js",
