@@ -8,7 +8,35 @@ The Tech Stack used for building this project is
 * Express
 * HTML, Scss , JS
 * Webpack for bundling up files
-* Aylien Api for text analysis
+* Aylien Api for text analysis.
+
+Supported scripts are 
+
+```
+yarn start
+
+To build a dist folder and start the server use this command in production
+```
+
+``` 
+yarn client
+
+to run the webpack dev server
+```
+
+```
+yarn server
+
+to fire up the server
+```
+
+```
+yarn test
+
+for testing
+```
+
+
 
 This project is live and can be viewed [here]()
 
