@@ -1,0 +1,11 @@
+footer {
+  background-color: #1b68dd;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  & p {
+    color: #fff;
+  }
+}

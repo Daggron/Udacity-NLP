@@ -1,0 +1,82 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Tamma 2', cursive;
+  color: #444;
+  overflow-x: hidden;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+p {
+  font-size: 17px;
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+li {
+  p {
+    color: #1b68dd;
+  }
+}
+
+.info {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 5px;
+  }
+
+}

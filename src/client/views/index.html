@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width = device-width , initial-scale = 1.0" />
+
+    <meta name="author" content="Abhay Sharma" />
+
+    <meta name="description" content="A nlp project made for udacity frotend nanodegree" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+
+    <title>News Article NLP</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">News Article NLP</h1>
+    </header>
+
+    <main>
+      <h2>Natural Language Processing</h2>
+
+      <h4 class="info">
+        NLP is considered its own branch of computer science, focused on computers’ ability to process and
+        even interact with natural human speech. Machine learning and deep learning are used on massive
+        amounts of data to obtain the rules and understanding of nuance in human speech. Everyone who has
+        used Alexa or Google Assistant or other voice command systems knows that they are always
+        improving - but they aren’t perfect. Verbal interactions can be incredibly hard to decipher. Sarcasm,
+        for instance, requires understanding not just words and grammar but tone as well, and regional accents
+        and ways of saying things have to be taken into account, not to mention coverage for all the
+        major languages.
+      </h4>
+      
+      <p class="center">
+        Enter a statement here to check its sentiment analysis
+      </p>
+
+      <form onsubmit="return Client.handleSubmit(event)">
+        <input
+          required
+          id="test-statement"
+          type="text"
+          placeholder="Eminem is a god"
+        />
+        <input class="btn" type="submit" value="Get Analysis" />
+      </form>
+
+      <section class="text-results">
+        <ul>
+          <li>
+            <h3>Text Polarity:</h3>
+            <p id="text_polarity"></p>
+            <h4>Confidence:</h4>
+            <p id="text_polarity_confidence"></p>
+          </li>
+
+          <li>
+            <h3>Text Subjectivity:</h3>
+            <p id="text_subjectivity"></p>
+            <h4>Confidence:</h4>
+            <p id="text_subjectivity_confidence"></p>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <form class="" onsubmit="return Client.handleSubmitArticle(event)">
+        <label for="test-url">
+          Or, try putting in the url of an article
+        </label>
+        <input required id="test-url" type="url" placeholder="https://en.wikipedia.org/wiki/Bhagavad_Gita" />
+        <input class="btn" type="submit" value="Get Analysis" />
+      </form>
+
+      <section class="url-results">
+        <ul>
+          <li>
+            <h3>Text Polarity:</h3>
+            <p id="polarity"></p>
+            <h4>Confidence:</h4>
+            <p id="polarity_confidence"></p>
+          </li>
+
+          <li>
+            <h3>Text Subjectivity:</h3>
+            <p id="subjectivity"></p>
+            <h4>Confidence:</h4>
+            <p id="subjectivity_confidence"></p>
+          </li>
+
+          <li>
+            <h3>Text Excerpt:</h3>
+            <p id="excerpt"></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Built with 
+        <span>&nbsp;💝&nbsp;</span>
+        by Abhay
+      </p>
+    </footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () =>
+          navigator.serviceWorker.register("/service-worker.js")
+        );
+      }
+    </script>
+  </body>
+</html>
